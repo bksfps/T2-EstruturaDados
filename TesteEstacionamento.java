@@ -10,7 +10,6 @@ public class TesteEstacionamento {
         Carro carro3 = new Carro("CCC-3333", LocalDateTime.now().plusMinutes(10));
         Carro carro4 = new Carro("DDD-4444", LocalDateTime.now().plusMinutes(15));
 
-        // Estacionamento com Pilha
         System.out.println("Estacionamento com Pilha:");
         estacionamentoPilha.entradaCarro(carro1);
         estacionamentoPilha.entradaCarro(carro2);
@@ -21,7 +20,6 @@ public class TesteEstacionamento {
         estacionamentoPilha.saidaCarro("AAA-1111");
         estacionamentoPilha.estadoAtual();
 
-        // Estacionamento com Fila
         System.out.println("\nEstacionamento com Fila:");
         estacionamentoFila.entradaCarro(carro1);
         estacionamentoFila.entradaCarro(carro2);
